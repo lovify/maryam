@@ -1,0 +1,6 @@
+{
+  "name": "أحمد ومريم — حكايتنا",
+  "description": "هدية رومانسية تفاعلية من أحمد إلى مريم — حكاية مصورة ورسائل وذكريات.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

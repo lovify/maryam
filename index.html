@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إلى مريم — أجمل صدفة في حياتي</title>
+    <meta
+      name="description"
+      content="هدية رومانسية تفاعلية من أحمد إلى مريم — حكاية مصورة ورسائل وذكريات."
+    />
+    <meta property="og:title" content="إلى مريم — أجمل صدفة في حياتي" />
+    <meta
+      property="og:description"
+      content="هدية رومانسية تفاعلية من أحمد إلى مريم — حكاية مصورة ورسائل وذكريات."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body data-experience-state="entry">
+    <!-- Custom ambient cursor for fine-pointer desktop devices -->
+    <div class="ambient-cursor" id="ambient-cursor" aria-hidden="true"></div>
+
+    <!-- Ambient particle canvas -->
+    <canvas id="ambient-particles" class="ambient-particles" aria-hidden="true"></canvas>
+
+    <!-- Background audio element (starts at 25s and loops cleanly in JS) -->
+    <audio id="bg-audio" preload="auto"></audio>
+
+    <!-- =========================================================
+         1. THE SECRET ENTRY
+         ========================================================= -->
+    <section
+      id="secret-entry"
+      class="secret-entry"
+      aria-label="المدخل السري"
+      aria-hidden="false"
+    >
+      <div class="secret-entry__veil" aria-hidden="true"></div>
+
+      <div class="secret-entry__stage">
+        <header class="secret-entry__prelude">
+          <p class="secret-entry__eyebrow" id="entry-eyebrow">رسالة خاصة · إلى مريم</p>
+          <h1 class="secret-entry__quote" id="entry-quote">
+            في حكايات بتبدأ بالصدفة...<br />
+            وحكايتنا ليها مكان تاني.
+          </h1>
+        </header>
+
+        <div class="envelope-stage">
+          <div class="envelope-wrap" id="envelope-wrap">
+            <button
+              type="button"
+              id="envelope-trigger"
+              class="envelope"
+              aria-expanded="false"
+              aria-controls="envelope-card"
+              aria-label="افتحي الظرف السري لقراءة رسالة أحمد"
+            >
+              <span class="envelope__back" aria-hidden="true"></span>
+              <span class="envelope__flap" aria-hidden="true"></span>
+              <span class="envelope__pocket" aria-hidden="true"></span>
+              <span class="envelope__seal" aria-hidden="true">
+                <span class="envelope__seal-ring"></span>
+                <span class="envelope__seal-monogram">أ · م</span>
+              </span>
+              <span class="envelope__hint" id="envelope-hint">اضغطي لفتح الظرف</span>
+            </button>
+
+            <article
+              id="envelope-card"
+              class="envelope-card"
+              aria-hidden="true"
+            >
+              <p class="envelope-card__salutation" id="entry-card-salutation">مريم،</p>
+              <p class="envelope-card__message" id="entry-card-message">
+                قبل ما تكملي، كنت عاوز أقولك إن كل تفصيلة هنا اتعملت عشانك إنتِ بس... خدي نفس هادي وافتحي حكايتنا.
+              </p>
+              <p class="envelope-card__signature" id="entry-card-signature">أحمد</p>
+              <button
+                type="button"
+                id="enter-experience-btn"
+                class="btn btn--gold entry-cta"
+              >
+                ادخلي عالمنا
+              </button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         MAIN EDITORIAL EXPERIENCE
+         ========================================================= -->
+    <div id="main-experience" class="main-experience" aria-hidden="true">
+      <!-- Clean 3-Zone Editorial Top Bar -->
+      <header class="site-header" id="site-header">
+        <div class="site-header__inner">
+          <a href="#hero" class="site-brand" id="site-brand">أحمد ومريم</a>
+
+          <nav class="site-nav" aria-label="أقسام الحكاية">
+            <a href="#our-story" class="site-nav__link">حكايتنا</a>
+            <a href="#love-letter" class="site-nav__link">رسالتي</a>
+            <a href="#gallery" class="site-nav__link">ذكرياتنا</a>
+            <a href="#surprises" class="site-nav__link">مفاجآت</a>
+          </nav>
+
+          <div class="site-header__action">
+            <button
+              type="button"
+              id="music-toggle"
+              class="music-toggle"
+              aria-pressed="false"
+              aria-label="تشغيل الموسيقى الهادئة"
+            >
+              <span class="music-bars" aria-hidden="true">
+                <span class="music-bars__bar"></span>
+                <span class="music-bars__bar"></span>
+                <span class="music-bars__bar"></span>
+              </span>
+              <span class="music-toggle__label" id="music-toggle-label">موسيقى · تشغيل</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <!-- =======================================================
+             2. THE MAIN HERO
+             ======================================================= -->
+        <section id="hero" class="hero section-dark">
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="container hero__grid">
+            <div class="hero__editorial">
+              <p class="kicker" id="hero-kicker">من أحمد · إلى مريم</p>
+              <h2 class="hero__title" id="hero-title">
+                إلى مريم... أجمل صدفة في حياتي
+              </h2>
+              <p class="hero__subtitle" id="hero-subtitle">
+                في يوم كل الناس بتتكلم فيه عن الحب، أنا حبيت أعملك حاجة تفضل فاكرانا.
+              </p>
+              <div class="hero__actions">
+                <a href="#our-story" class="btn btn--primary" id="hero-cta">
+                  ابدئي حكايتنا
+                </a>
+              </div>
+            </div>
+
+            <figure class="hero__visual">
+              <div class="hero__frame">
+                <img
+                  id="hero-image"
+                  src="/assets/aistudio/1143281055399200803_0625e476.jfif"
+                  alt="لحظة هادئة تحت ضوء القمر على البحر"
+                  class="hero__img"
+                  loading="eager"
+                />
+                <div class="hero__scrim" aria-hidden="true"></div>
+              </div>
+              <figcaption class="hero__caption" id="hero-caption">
+                القمر والبحر وهدوء ليلة بتشبه راحتي معاكي
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="hero__scroll-line" aria-hidden="true">
+            <span class="hero__scroll-stem"></span>
+          </div>
+        </section>
+
+        <!-- =======================================================
+             3. OUR STORY — INTERACTIVE TIMELINE
+             ======================================================= -->
+        <section id="our-story" class="story section-cream">
+          <div class="container">
+            <header class="section-head reveal-item">
+              <p class="kicker kicker--burgundy">الفصل الأول · خط الزمن</p>
+              <h2 class="section-title" id="story-heading">حكايتنا خطوة بخطوة</h2>
+              <p class="section-lead" id="story-lead">
+                محطات صغيرة بس غيرت شكل أيامي كلها.
+              </p>
+            </header>
+
+            <div class="timeline" id="timeline-container">
+              <div class="timeline__spine" aria-hidden="true">
+                <div class="timeline__spine-fill" id="timeline-spine-fill"></div>
+              </div>
+              <!-- Timeline milestones rendered dynamically from SITE_CONFIG.timeline -->
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+             4. THE LOVE LETTER — HANDWRITTEN TYPING REVEAL
+             ======================================================= -->
+        <section id="love-letter" class="letter-section section-dark">
+          <div class="container letter-chamber">
+            <header class="section-head section-head--center reveal-item">
+              <p class="kicker">الفصل الثاني · بخط القلب</p>
+              <h2 class="section-title" id="letter-section-title">رسالة مكتوبة عشانك</h2>
+            </header>
+
+            <article class="stationery reveal-item" aria-label="رسالة حب من أحمد إلى مريم">
+              <div class="stationery__trim" aria-hidden="true"></div>
+              <div class="stationery__meta">
+                <span id="letter-date-label">14 فبراير · إلى مريم</span>
+                <span aria-hidden="true">·</span>
+                <span id="letter-place-label">القاهرة، ليلة هادية</span>
+              </div>
+
+              <p class="stationery__salutation" id="letter-salutation">مريم الغالية،</p>
+
+              <div
+                id="letter-typed-body"
+                class="stationery__body"
+                aria-live="polite"
+              ></div>
+              <span class="typing-caret" id="typing-caret" aria-hidden="true"></span>
+
+              <div class="stationery__footer">
+                <div class="stationery__signoff">
+                  <p class="stationery__closing" id="letter-closing">بكل صدق وحب،</p>
+                  <p class="stationery__signature" id="letter-signature">أحمد</p>
+                </div>
+
+                <button
+                  type="button"
+                  id="letter-replay-btn"
+                  class="btn btn--ghost-dark"
+                >
+                  إظهار الرسالة كاملة
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- =======================================================
+             5. THE MEMORY GALLERY — ASYMMETRIC EDITORIAL GALLERY
+             ======================================================= -->
+        <section id="gallery" class="gallery-section section-cream">
+          <div class="container">
+            <header class="section-head reveal-item">
+              <p class="kicker kicker--burgundy">الفصل الثالث · ألبوم اللحظات</p>
+              <h2 class="section-title" id="gallery-heading">ذكرياتنا في صور</h2>
+              <p class="section-lead" id="gallery-lead">
+                لقطات بمقاسات مختلفة، كل صورة فيها حكاية وتفصيلة خاصة بينا... اضغطي على أي صورة لفتحها كاملة.
+              </p>
+            </header>
+
+            <div class="editorial-gallery" id="editorial-gallery">
+              <!-- Asymmetric editorial gallery items rendered from SITE_CONFIG.gallery -->
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+             6. THE LITTLE SURPRISES — 3 SEALED LETTERS
+             ======================================================= -->
+        <section id="surprises" class="surprises-section section-burgundy">
+          <div class="container">
+            <header class="section-head section-head--center reveal-item">
+              <p class="kicker">الفصل الرابع · ثلاث رسائل مغلقة</p>
+              <h2 class="section-title" id="surprises-heading">مفاجآت صغيرة ليكي</h2>
+              <p class="section-lead section-lead--light" id="surprises-lead">
+                كل ظرف مقفول جواه كلمة من قلبي... افتحيهم بالترتيب اللي تحبيه.
+              </p>
+            </header>
+
+            <div class="surprises-grid" id="surprises-grid">
+              <!-- Three sealed interactive letters rendered from SITE_CONFIG.surprises -->
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+             7. THE SPECIAL QUESTION
+             ======================================================= -->
+        <section id="question" class="question-section section-dark">
+          <div class="question-section__aura" aria-hidden="true"></div>
+          <div class="container question-stage">
+            <div class="question-prelude reveal-item">
+              <p class="kicker">الفصل الخامس · لحظة صدق</p>
+              <blockquote class="question-prelude__quote" id="question-prelude">
+                مريم، لو كان ينفع أختار حاجة واحدة<br />
+                تفضل معايا من كل الدنيا...<br />
+                هختارك إنتِ.
+              </blockquote>
+            </div>
+
+            <div class="question-card reveal-item" id="question-box">
+              <div class="question-card__divider" aria-hidden="true"></div>
+              <h2 class="question-card__prompt" id="question-prompt">
+                تفضلي نعمل ذكريات أحلى سوا؟
+              </h2>
+
+              <div class="question-actions" id="question-actions">
+                <button
+                  type="button"
+                  id="choice-yes"
+                  class="btn btn--gold question-btn-yes"
+                >
+                  أكيد، دايماً
+                </button>
+                <button
+                  type="button"
+                  id="choice-think"
+                  class="btn btn--outline-light question-btn-think"
+                >
+                  خليني أفكر شوية
+                </button>
+              </div>
+
+              <p
+                id="question-feedback"
+                class="question-feedback"
+                aria-live="polite"
+              ></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- =======================================================
+             8. THE FINAL EXPERIENCE
+             ======================================================= -->
+        <section id="finale" class="finale-section">
+          <div class="finale__backdrop">
+            <img
+              id="finale-image"
+              src="/assets/aistudio/1120974163527887992_1e062753.jfif"
+              alt="لحظة غروب على الشاطئ"
+              class="finale__img"
+              loading="lazy"
+            />
+            <div class="finale__scrim" aria-hidden="true"></div>
+          </div>
+
+          <div class="container finale__content reveal-item">
+            <div class="finale__halo" aria-hidden="true"></div>
+            <p class="finale__eyebrow">وختام الحكاية بداية جديدة</p>
+            <h2 class="finale__headline" id="finale-headline">
+              كل سنة وإنتِ أجمل حاجة في أيامي.
+            </h2>
+            <p class="finale__signature" id="finale-signature">
+              من أحمد... لمريم، بكل الحب.
+            </p>
+            <div class="finale__actions">
+              <button
+                type="button"
+                id="replay-journey-btn"
+                class="btn btn--outline-light"
+              >
+                ارجعي لبداية الحكاية
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <p class="site-footer__text" id="footer-text">
+            صُنع خصيصاً لمريم · بكل الحب من أحمد
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- =========================================================
+         FULLSCREEN GALLERY LIGHTBOX
+         ========================================================= -->
+    <div
+      id="lightbox"
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightbox-title"
+      aria-hidden="true"
+    >
+      <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox__shell">
+        <div class="lightbox__topbar">
+          <span class="lightbox__counter" id="lightbox-counter">01 / 06</span>
+          <button
+            type="button"
+            id="lightbox-close"
+            class="btn btn--outline-light lightbox__close"
+            aria-label="إغلاق عرض الصورة"
+          >
+            إغلاق
+          </button>
+        </div>
+
+        <figure class="lightbox__figure">
+          <div class="lightbox__media-wrap">
+            <img id="lightbox-img" src="" alt="" class="lightbox__img" />
+          </div>
+          <figcaption class="lightbox__caption-block">
+            <p class="lightbox__meta" id="lightbox-meta"></p>
+            <h3 class="lightbox__title" id="lightbox-title"></h3>
+            <p class="lightbox__caption" id="lightbox-caption"></p>
+          </figcaption>
+        </figure>
+
+        <div class="lightbox__controls">
+          <button
+            type="button"
+            id="lightbox-prev"
+            class="btn btn--outline-light"
+            aria-label="الصورة السابقة"
+          >
+            السابق
+          </button>
+          <button
+            type="button"
+            id="lightbox-next"
+            class="btn btn--outline-light"
+            aria-label="الصورة التالية"
+          >
+            التالي
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
