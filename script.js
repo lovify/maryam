@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
 
   music: {
     // مسار ملف الصوت — يبدأ التشغيل تلقائياً من الثانية 25
-    src: "/assets/aistudio/08.Qusad_Einy_0d1fc57f.mp3",
+    src: "./assets/aistudio/08.Qusad_Einy_0d1fc57f.mp3",
     startTimeSeconds: 25,
     autoplay: true,
     playLabel: "موسيقى · تشغيل",
@@ -38,7 +38,7 @@ export const SITE_CONFIG = {
     subtitle:
       "في يوم كل الناس بتتكلم فيه عن الحب، أنا حبيت أعملك حاجة تفضل فاكرانا.",
     ctaText: "ابدئي حكايتنا",
-    image: "/assets/aistudio/1143281055399200803_0625e476.jfif",
+    image: "./assets/aistudio/1143281055399200803_0625e476.jfif",
     imageAlt: "مشهد ليلي هادئ تحت ضوء القمر على البحر",
     caption: "القمر والبحر وهدوء ليلة بتشبه راحتي معاكي",
   },
@@ -54,7 +54,7 @@ export const SITE_CONFIG = {
       title: "اليوم اللي بدأت فيه الحكاية",
       description:
         "لسه فاكر اليوم ده كأنه إمبارح؛ الدنيا كانت نسمة خفيفة قدام المكتبة في الكوربة، وأول ما شفتك وسمعت ضحكتك وإنتِ بتعتذري عن الزحمة، حسيت إن اليوم ده مش هيعدي عادي... وإن دي بداية حاجة هتفضل معايا العمر كله.",
-      image: "/assets/aistudio/The_Silence_Between_Two_Heartbeats_c299cf3d.jfif",
+      image: "./assets/aistudio/The_Silence_Between_Two_Heartbeats_c299cf3d.jfif",
       imageAlt: "لقاء دافئ تحت ضوء مصباح الحديقة",
     },
     {
@@ -64,7 +64,7 @@ export const SITE_CONFIG = {
       title: "أول كلام بينا",
       description:
         "قعدنا نتكلم في حاجات كتير ملهاش آخر، من الكتب والأغاني لحد تفاصيل يومنا العادية. الغريب إن تلات ساعات عدّوا وإحنا فاكرين إننا لسه قاعدين من 10 دقايق، ومن يومها بقيت بستنى كلامك كل يوم.",
-      image: "/assets/aistudio/868068896940754957_d27423f1.jfif",
+      image: "./assets/aistudio/868068896940754957_d27423f1.jfif",
       imageAlt: "حوار قريب في أجواء دافئة",
     },
     {
@@ -74,7 +74,7 @@ export const SITE_CONFIG = {
       title: "أول ذكرى مميزة",
       description:
         "تمشية طويلة على النيل قبل المغرب بكوبايتين قهوة، والهوا كان ساقع شوية بس كلامنا كان مدفّي الدنيا. يومها ضحكنا على أتفه الحاجات، وعرفت قد إيه القعدة معاكي بتخلي أي مكان بسيط يبقى أحلى مكان في الدنيا.",
-      image: "/assets/aistudio/773352567311312898_ae3690f0.jfif",
+      image: "./assets/aistudio/773352567311312898_ae3690f0.jfif",
       imageAlt: "سير معاً وسط المساحات الخضراء",
     },
     {
@@ -84,7 +84,7 @@ export const SITE_CONFIG = {
       title: "اللحظة اللي كل حاجة اتغيرت فيها",
       description:
         "كنت راجع من يوم طويل وتعبان جداً، وبمجرد ما كلمتيني وسمعت صوتك كل التعب راح في ثانية. اللحظة دي بالذات فهمت فيها إنك مش مجرد حد لطيف في حياتي... إنتِ بقيتِ راحتي وبيتي اللي برجع له من دوشة الدنيا.",
-      image: "/assets/aistudio/1123718544549561363_1e864f47.jfif",
+      image: "./assets/aistudio/1123718544549561363_1e864f47.jfif",
       imageAlt: "لحظة شاعرية تحت سماء الليل المضيئة",
     },
     {
@@ -94,7 +94,7 @@ export const SITE_CONFIG = {
       title: "أجمل ذكرى في قلبي",
       description:
         "وقفتنا قدام البحر ساعة الغروب وصوت الموج حوالينا، وإنتِ باصة للميه ومبتسمة بهدوء. اليوم ده فضل محفور في قلبي بكل تفاصيله، وكل ما أفتكره بدعي ربنا إننا نعيش زيه وأحلى منه سنين كتير جاية.",
-      image: "/assets/aistudio/923871311080377881_79bdada6.jfif",
+      image: "./assets/aistudio/923871311080377881_79bdada6.jfif",
       imageAlt: "عناق دافئ عند الغروب",
     },
   ],
@@ -122,7 +122,7 @@ export const SITE_CONFIG = {
   // --------------------------------------------------------------------------
   gallery: [
     {
-      src: "/assets/aistudio/The_Silence_Between_Two_Heartbeats_c299cf3d.jfif",
+      src: "./assets/aistudio/The_Silence_Between_Two_Heartbeats_c299cf3d.jfif",
       alt: "نظرة دافئة تحت الزهور الوردية وضوء المساء",
       layoutClass: "gallery-piece--tall",
       cropEdge: false,
@@ -132,7 +132,7 @@ export const SITE_CONFIG = {
         "قعدة بسيطة تحت نور الشارع والورد، بس في النظرة دي كان فيه كلام كتير أصدق من أي جملة ممكن تتقال.",
     },
     {
-      src: "/assets/aistudio/1143281055399200803_0625e476.jfif",
+      src: "./assets/aistudio/1143281055399200803_0625e476.jfif",
       alt: "الوقوف أمام البحر تحت اكتمال القمر",
       layoutClass: "gallery-piece--wide",
       cropEdge: false,
@@ -142,7 +142,7 @@ export const SITE_CONFIG = {
         "لما الدنيا كلها هديت حوالينا وما فضلش غير صوت البحر والقمر وإحنا واقفين جنباً لجنب.",
     },
     {
-      src: "/assets/aistudio/773352567311312898_ae3690f0.jfif",
+      src: "./assets/aistudio/773352567311312898_ae3690f0.jfif",
       alt: "المشي يداً بيد في طبيعة هادئة",
       layoutClass: "gallery-piece--feature",
       cropEdge: false,
@@ -152,7 +152,7 @@ export const SITE_CONFIG = {
         "مشوار طويل على رجلينا من غير ما نحس بالوقت، وإيدي في إيدك كأن الطريق معمول لينا لوحدنا.",
     },
     {
-      src: "/assets/aistudio/1123718544549561363_1e864f47.jfif",
+      src: "./assets/aistudio/1123718544549561363_1e864f47.jfif",
       alt: "أضواء ذهبية بين قلبين في المساء",
       layoutClass: "gallery-piece--portrait",
       cropEdge: false,
@@ -162,7 +162,7 @@ export const SITE_CONFIG = {
         "أجمل ما في وجودك إن حتى السكوت معاكي مريح، وكأن قلوبنا بتفهم بعض من غير ولا كلمة.",
     },
     {
-      src: "/assets/aistudio/923871311080377881_79bdada6.jfif",
+      src: "./assets/aistudio/923871311080377881_79bdada6.jfif",
       alt: "عناق مبهج في ساعة الغروب",
       layoutClass: "gallery-piece--medium",
       cropEdge: true,
@@ -172,7 +172,7 @@ export const SITE_CONFIG = {
         "من أكتر اللحظات اللي ضحكنا فيها من قلبنا، وحسيت وقتها إن فرحتك هي أكتر حاجة تهمني في الدنيا.",
     },
     {
-      src: "/assets/aistudio/1120974163527887992_1e062753.jfif",
+      src: "./assets/aistudio/1120974163527887992_1e062753.jfif",
       alt: "الجري على الشاطئ وقت الغروب",
       layoutClass: "gallery-piece--offset",
       cropEdge: false,
@@ -244,7 +244,7 @@ export const SITE_CONFIG = {
   finale: {
     headline: "كل سنة وإنتِ أجمل حاجة في أيامي.",
     signature: "من أحمد... لمريم، بكل الحب.",
-    image: "/assets/aistudio/1120974163527887992_1e062753.jfif",
+    image: "./assets/aistudio/1120974163527887992_1e062753.jfif",
   },
 };
 
